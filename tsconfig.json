@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["frontend/src/*", "frontend/src/app/*", "frontend/src/components/*", "frontend/src/contexts/*", "frontend/src/services/*", "frontend/src/utils/*", "frontend/src/hooks/*"],
+      "src/*": ["frontend/src/*"],
+      "../contexts/*": ["frontend/src/contexts/*"],
+      "../components/*": ["frontend/src/components/*"],
+      "../services/*": ["frontend/src/services/*"],
+      "../utils/*": ["frontend/src/utils/*"],
+      "../hooks/*": ["frontend/src/hooks/*"],
+      "./components/*": ["frontend/src/app/components/*"],
+      "@/*": ["frontend/src/*"],
+      "@/app/*": ["frontend/src/app/*"],
+      "@/components/*": ["frontend/src/components/*"],
+      "@/contexts/*": ["frontend/src/contexts/*"],
+      "@/hooks/*": ["frontend/src/hooks/*"],
+      "@/services/*": ["frontend/src/services/*"],
+      "@/utils/*": ["frontend/src/utils/*"],
+      "@/styles/*": ["frontend/src/styles/*"]
+    }
+  },
+  "include": [
+    "frontend/src/**/*.ts",
+    "frontend/src/**/*.tsx",
+    "frontend/src/**/*.js",
+    "frontend/src/**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "backend",
+    "dist"
+  ]
+}
